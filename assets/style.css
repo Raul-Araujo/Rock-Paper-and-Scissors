@@ -39,9 +39,10 @@ a{
 /* Style of the H1 - The title.*/
 #game-title{
     position: fixed;
-    left:32%;
+    left:39%;
     top:25%;
 }
+
 /* Styling the PLAY BUTTON */
 #play-button{
     position: fixed;
