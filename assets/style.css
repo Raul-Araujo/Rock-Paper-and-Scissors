@@ -4,19 +4,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
+/* Style of the body in the Game Page */
+#game-body {
+    background-color: rgba(128, 0, 128, 0.430);
+    color: white;  
+}
 
 /* Styling the Rule Option */
 header{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
 }
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
     list-style-type: none; 
+    padding-left: 0%;
 }
 a{
     text-decoration:none;
@@ -24,7 +27,16 @@ a{
 #rules-information{
     font-size: 200%;
 }
+#rules{
+    color: white;
+    font-size: 12px;
+}
+#rules:hover{
+    color: purple;
+    border-bottom: 1px purple solid;
+}
 
+/* Style of the H1 - The title.*/
 #game-title{
     position: fixed;
     left:32%;
@@ -50,8 +62,8 @@ a{
     border: 4px dotted purple;
 }
 
-
-#footer-text{
+/* General Footer style*/
+footer {
     position:fixed;
     bottom:2px;
     left: 43%;
