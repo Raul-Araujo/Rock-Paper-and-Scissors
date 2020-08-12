@@ -6,8 +6,61 @@ body {
 }
 /* Style of the body in the Game Page */
 #game-body {
-    background-color: rgba(128, 0, 128, 0.430);
-    color: white;  
+    background-color: rgba(128, 0, 128, 0.777);
+    color: white; 
+}
+h1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+img-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.options-rsp{
+    padding:0.7em;
+    border-radius:1.4em;
+    height: 10em;
+    
+}
+hr {
+    color:white;
+    width: 25em;
+}
+
+
+/* ScoreBoard Style*/
+#scoreboard1{
+    position: fixed;
+    top: 0.7em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+#scoreboard2{
+    position: fixed;
+    top: 0.7em;
+    right: 0.4em; 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#player-score, #computer-score{
+    border: 1px white dashed;
+    border-radius: 0.7em;
+    height: 7em;
+    width: 4.7em;
+    background-color: rgba(0, 0, 0, 0.295);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
 }
 
 /* Styling the Rule Option */
@@ -38,9 +91,9 @@ a{
 
 /* Style of the H1 - The title.*/
 #game-title{
-    position: fixed;
-    left:32%;
-    top:25%;
+    display:flex;
+    flex-direction: column;
+    align-items: center
 }
 /* Styling the PLAY BUTTON */
 #play-button{
@@ -61,11 +114,47 @@ a{
     color: purple;
     border: 4px dotted purple;
 }
-
+/* Choice boxes Style*/
+section{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#player-choiceboard{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#x-sigal{
+    font-size: 2.9em;
+    padding: 0.2em;
+}
+#computer-choiceboard{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#player-choicebox, #computer-choicebox{
+    border: 1px white dashed;
+    border-radius: 0.7em;
+    height: 3.7rem;
+    width: 13rem;
+    background-color: rgba(0, 0, 0, 0.295);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /* General Footer style*/
 footer {
-    position:fixed;
-    bottom:2px;
-    left: 43%;
-    border-top:1px purple solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.7em;
+}
+#game-footer{
+    position: fixed;
+    bottom: 0em;
+    border-top:0.1em white solid;
+
 }
