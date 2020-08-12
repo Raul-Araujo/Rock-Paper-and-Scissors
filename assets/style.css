@@ -95,6 +95,7 @@ a{
     flex-direction: column;
     align-items: center
 }
+
 /* Styling the PLAY BUTTON */
 #play-button{
     position: fixed;
