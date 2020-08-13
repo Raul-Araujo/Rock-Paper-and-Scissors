@@ -2,6 +2,7 @@
 body {
     color: purple;
     font-family: Arial, Helvetica, sans-serif;
+    
 
 }
 /* Style of the body in the Game Page */
@@ -98,22 +99,18 @@ a{
 
 /* Styling the PLAY BUTTON */
 #play-button{
-    position: fixed;
-    top:40%;
-    left:40%; 
-    padding: 40px;  
-    font-size: 25px;
-    width: 20%;
+    padding: 0.2em;  
+    font-size: 3.4em;
+    width: 7em;
     background-color: purple;
     color: white;
-    font-weight: 700;
-    border-radius: 25px;
+    border-radius: 3em;
     
 }
 #play-button:hover{
     background-color: white;
     color: purple;
-    border: 4px dotted purple;
+    border: 0.1em dotted purple;
 }
 /* Choice boxes Style*/
 section{
@@ -145,6 +142,33 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+#index-main {
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+}
+#lastpage-main{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#try-button{
+    width: 17em;
+    height: 4.3em;
+    border-radius:3em;
+    background-color: white;
+    color: purple;
+    border: 0.2em dotted purple;
+}
+#try-button:hover{
+    background-color: purple;
+    color: white;
+    font-size:1em;
+    border: 0.2em dotted purple;
 }
 /* General Footer style*/
 footer {
