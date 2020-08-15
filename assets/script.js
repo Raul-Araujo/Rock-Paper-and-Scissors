@@ -1,9 +1,9 @@
+
 let playerScore = 0;
 let computerScore = 0;
 let rounds = 0;
 let playing = true;
-const playerSelection;
-const computerSelection;
+
 
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
@@ -14,60 +14,60 @@ let playerScoreboard = document.getElementById('player-score');
 let computerScoreboard = document.getElementById('computer-score');
 
 
-/* Function that gets the players choice */
-function playerSelecting(){
-    rock.addEventListener(`click`, function(){
-        if (rounds < 5){
-            return playerSelection = "ROCK";
-        } else {
-            playing === false;
-        }
-    });
-    paper.addEventListener('click', function(){
-        if (rounds < 5){
-            return playerSelection = "PAPER";
-        } else {
-            playing === false;
-        }
-    });
-    scissors.addEventListener('click', function(){
-        if (rounds < 5){
-            return playerSelection = "SCISSORS";
-        } else {
-            playing === false;
-        }
-    });
-    return playerChoiceBox.textContent('${playerSelection}');
-}
-
-/* Function that makes the computer choice */
-function computerPlay(){
-    let computerOptions = ['ROCK', 'PAPER', 'SCISSORS'];
-    computerSelection = getArrayRandomElement(computerOptions);
-    return computerChoiceBox.textContent('${computerSelection}');
-}
-/* Function that evaluates who won each round */
+/* Function that evaluates who wins each round */
 function playRound(playerSelection, computerSelection){
-    
-    rounds++;
+    computerSelection = computerPlay();
 
+    rounds++;
+    playerChoiceBox.textContent = playerSelection;
+    computerChoiceBox.textContent = computerSelection;
+    
     /* Player wins */
     if ((playerSelection === 'SCISSORS' && computerSelection === 'PAPER') || (playerSelection === 'ROCK' && computerSelection === 'SCISSORS') || (playerSelection === 'PAPER' && computerSelection === 'ROCK')){
         playerScore++;
-        playerScoreboard.textContent = '${playerScore}';
-        computerScoreboard.textContent = '${computerScore}';
+        playerScoreboard.textContent = playerScore;
+        computerScoreboard.textContent = computerScore;
     }
     /* Computer wins */
     else if ((computerSelection === 'SCISSORS' && playerSelection === 'PAPER') || (computerSelection === 'ROCK' && playerSelection === 'SCISSORS') || (computerSelection === 'PAPER' && playerSelection === 'ROCK')){
         computerScore++;
-        playerScoreboard.textContent = '${playerScore}';
-        computerScoreboard.textContent = '${computerScore}';
+        playerScoreboard.textContent = playerScore;
+        computerScoreboard.textContent = computerScore;
     } 
     /* Draw */
     else {
-        playerScoreboard.textContent = '${playerScore}';
-        computerScoreboard.textContent = '${computerScore}';
+        playerScoreboard.textContent = playerScore;
+        computerScoreboard.textContent = computerScore;
     }
+}
+/* Function that gets the players choice */
+rock.addEventListener('click', function(){
+    if (rounds < 5){
+        return playRound("ROCK");
+    } else {
+        playing === false;
+    }
+});
+paper.addEventListener('click', function(){
+    if (rounds < 5){
+        return playRound("PAPER");
+    } else {
+        playing === false;
+    }
+});
+scissors.addEventListener('click', function(){
+    if (rounds < 5){
+        return playRound("SCISSORS");
+    } else {
+        playing === false;
+    }
+});
+
+/* Function that makes the computer choice */
+function computerPlay(){
+    let computerOptions = ['ROCK', 'PAPER', 'SCISSORS'];
+    selector = computerOptions[Math.floor(Math.random()*computerOptions.length)]; 
+    return selector;
 }
 
 /* Function that shows the winner */
