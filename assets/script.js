@@ -12,7 +12,7 @@ let playerChoiceBox = document.getElementById('player-choicebox');
 let computerChoiceBox = document.getElementById('computer-choicebox');
 let playerScoreboard = document.getElementById('player-score');
 let computerScoreboard = document.getElementById('computer-score');
-
+let finalWinner = document.getElementById('end-title');
 
 /* Function that evaluates who wins each round */
 function playRound(playerSelection, computerSelection){
@@ -39,6 +39,18 @@ function playRound(playerSelection, computerSelection){
         playerScoreboard.textContent = playerScore;
         computerScoreboard.textContent = computerScore;
     }
+    /* Function that shows the winner */
+        if (rounds === 5){
+            if (playerScore > computerScore){
+                alert('You Win!');
+            } else if (computerScore > playerScore){
+                alert('You loose.');
+            } else {
+                alert('It was a Draw.');
+            }
+            window.location.href = "last-page.html";
+        }
+
 }
 /* Function that gets the players choice */
 rock.addEventListener('click', function(){
@@ -70,18 +82,4 @@ function computerPlay(){
     return selector;
 }
 
-/* Function that shows the winner */
-function winner(){
-    if (rounds === 5){
-        if (playerScore > computerScore){
-            /* Show the name of the winner in the LastPage*/
-        } else if (playerScore < computerScore){
-            /* Shows: Computer beats you! in the LastPage */
-        } else {
-            /* Shows: Draw! in the LastPage */
 
-        }
-    } else {
-
-    }
-}
