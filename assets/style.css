@@ -1,13 +1,13 @@
 
 body {
-    color: purple;
+    color: rgba(77, 0, 128, 0.829);
     font-family: Arial, Helvetica, sans-serif;
     
 
 }
 /* Style of the body in the Game Page */
 #game-body {
-    background-color: rgba(128, 0, 128, 0.777);
+    background-color: rgba(77, 0, 128, 0.829);
     color: white; 
 }
 h1 {
@@ -22,6 +22,7 @@ img-group{
     justify-content: center;
 
 }
+/* Style of he options in the Game Page */
 .options-rsp{
     padding:0.7em;
     border-radius:1.4em;
@@ -35,7 +36,6 @@ hr {
     color:white;
     width: 25em;
 }
-
 
 /* ScoreBoard Style*/
 #scoreboard1{
@@ -59,7 +59,7 @@ hr {
     border-radius: 0.7em;
     height: 7em;
     width: 4.7em;
-    background-color: rgba(0, 0, 0, 0.295);
+    background-color: rgba(77, 0, 128, 0.829);
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -80,7 +80,7 @@ ul {
 }
 a{
     text-decoration:  none;
-    color: purple;
+    color: (77, 0, 128, 0.829);
 }
 #rules-information{
     font-size: 200%;
@@ -90,8 +90,8 @@ a{
     font-size: 12px;
 }
 #rules:hover{
-    color: purple;
-    border-bottom: 1px purple solid;
+    color: rgba(77, 0, 128, 0.829);
+    border-bottom: 1px rgba(77, 0, 128, 0.829) solid;
 }
 
 /* Style of the H1 - The title.*/
@@ -101,21 +101,7 @@ a{
     align-items: center
 }
 
-/* Styling the PLAY BUTTON */
-#play-button{
-    padding: 0.2em;  
-    font-size: 3.4em;
-    width: 7em;
-    background-color: purple;
-    color: white;
-    border-radius: 3em;
-    
-}
-#play-button:hover{
-    background-color: white;
-    color: purple;
-    border: 0.1em dotted purple;
-}
+
 /* Choice boxes Style*/
 section{
     display:flex;
@@ -148,33 +134,57 @@ section{
     justify-content: center;
     align-items: center;
 }
+
+/* Style Main */
 #index-main {
     display: flex;
     flex-direction:  column;
     justify-content: center;
     align-items: center;
 }
+
 #lastpage-main{
-    margin-top: 7%;
+    margin-top: 12em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
 }
+
+/* Style buttons */
+/* Styling the PLAY BUTTON */
+#play-button{
+    padding: 0.2em;  
+    font-size: 3.4em;
+    width: 7em;
+    background-color: rgba(77, 0, 128, 0.829);
+    color: white;
+    border-radius: 3em;
+    
+}
+#play-button:hover{
+    background-color: white;
+    color: rgba(77, 0, 128, 0.829);
+    border: 0.1em dotted rgba(77, 0, 128, 0.829);
+}
+
+/* Styling the TRY AGAIN BUTTON */
 #try-button{
     width: 17em;
     height: 4.3em;
+    font-style: italic;
     border-radius:3em;
     background-color: white;
-    color: purple;
-    border: 0.2em dotted purple;
+    color: rgba(77, 0, 128, 0.829);
+    border: 0.2em dotted rgba(77, 0, 128, 0.829);
 }
 #try-button:hover{
-    background-color: purple;
+    background-color: rgba(77, 0, 128, 0.829);
     color: white;
     font-size:1em;
-    border: 0.2em dotted purple;
+    border: 0.2em dotted rgba(77, 0, 128, 0.829);
 }
+
 /* General Footer style*/
 footer {
     display: flex;
@@ -193,6 +203,6 @@ footer {
     color: white;
 }
 #footer-text{
-    border-top:0.1em purple solid;
+    border-top:0.1em rgba(77, 0, 128, 0.829) solid;
 
 }
